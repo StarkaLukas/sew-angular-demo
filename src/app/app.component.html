@@ -13,3 +13,16 @@
 </label>
 
 <p>{{todos}}</p>
+
+<ul>
+  <li *ngFor="let item of todos">
+    {{item}}
+    <button type="button" (click)="removeItem(item)">
+      x
+    </button>
+  </li>
+</ul>
+
+<button type="button" (click)="addItem()">
+  Add item
+</button>

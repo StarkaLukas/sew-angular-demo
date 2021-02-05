@@ -20,4 +20,12 @@ export class AppComponent {
   public onClicked(): void {
     this.title += '!!';
   }
+
+  public addItem(): void {
+    this.todos.push('something');
+  }
+
+  public removeItem(item: string): void {
+    this.todos.splice(this.todos.indexOf(item), 1);
+  }
 }
