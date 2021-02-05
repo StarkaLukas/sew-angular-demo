@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-demo';
   mynumber = 41;
+  todos = [
+    'Shopping',
+    'Homework',
+    'Listen to music'
+  ];
 
   constructor() {
   }
