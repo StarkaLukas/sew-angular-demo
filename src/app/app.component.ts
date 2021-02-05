@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-demo';
+  mynumber = 41;
+
+  constructor() {
+  }
+
+  public onClicked(): void {
+    this.title += '!!';
+  }
 }
