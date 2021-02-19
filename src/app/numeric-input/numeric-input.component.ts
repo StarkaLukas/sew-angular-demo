@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-numeric-input',
@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class NumericInputComponent implements OnInit {
 
   @Input() public value = 0;
+  @Output() public resetClicked = new EventEmitter<void>();
 
   constructor() { }
 
