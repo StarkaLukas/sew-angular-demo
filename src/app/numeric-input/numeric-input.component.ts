@@ -15,4 +15,8 @@ export class NumericInputComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public onResetClicked(): void {
+    this.resetClicked.emit();
+  }
+
 }

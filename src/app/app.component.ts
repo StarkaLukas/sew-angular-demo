@@ -28,4 +28,9 @@ export class AppComponent {
   public removeItem(item: string): void {
     this.todos.splice(this.todos.indexOf(item), 1);
   }
+
+  onReset(): void {
+    console.log('Reset clicked!');
+    this.mynumber = 0;
+  }
 }
